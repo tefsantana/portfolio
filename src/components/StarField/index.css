@@ -1,0 +1,28 @@
+.space-container {
+  background-image: radial-gradient(ellipse 80% 80% at 50% -20%, var(--bg-color-primary), var(--color-black));
+  inset: 0;
+  position: fixed;
+}
+
+.space {
+  --size: 2px;
+  --space-layer: 
+    4vw 50vh 0 var(--color-white),
+    18vw 88vh 0 var(--color-white),
+    73vw 14vh 0 var(--color-white);
+  
+  width: var(--size);
+  height: var(--size);
+  background: var(--color-white);
+  box-shadow: var(--space-layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+  animation: move var(--duration) linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
+}

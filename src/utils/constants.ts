@@ -1,0 +1,1 @@
+export const STARS_COLORS = ["#fff2", "#fff4", "#fff7", "#fffc"];
